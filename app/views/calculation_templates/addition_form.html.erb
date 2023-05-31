@@ -10,9 +10,9 @@
   <button>Add!</button>
 </form>
 
-<% if cookies.fetch(:addition_result) != nil %>
+<% if cookies[:addition_result] != nil %>
   <p>
     Previous addition: 
-    <%= cookies.fetch(:addition_first) %> + <%= cookies.fetch(:addition_second) %> = <%= cookies.fetch(:addition_result) %>
+    <%= cookies[:addition_first_num] %> + <%= cookies[:addition_second_num] %> = <%= cookies[:addition_result] %>
   </p>
 <% end %>
