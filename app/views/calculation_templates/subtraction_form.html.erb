@@ -10,9 +10,9 @@
   <button>Subtract!</button>
 </form>
 
-<p>
-  Previous subtraction: 
-  <%= cookies[:subtraction_second_num].to_f %> - 
-  <%= cookies[:subtraction_first_num].to_f %> = 
-  <%= cookies[:subtraction_result].to_f %>
-</p>
+<% if cookies.fetch(:subtraction_result) != nil %>
+  <p>
+    Previous subtraction: 
+    <%= cookies.fetch(:subtraction_first) %> - <%= cookies.fetch(:subtraction_second) %> = <%= cookies.fetch(:subtraction_result) %>
+  </p>
+<% end %>
