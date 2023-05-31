@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>VanillaRails7</title>
+    <title>Cookies Intro</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,30 @@
   </head>
 
   <body>
+    <table style="width: 100%" border="1">
+      <tr>
+        <td>
+          <a href="/muggle_add">Add</a>
+        </td>
+
+        <td>
+          <a href="/muggle_subtract">Subtract</a>
+        </td>
+
+        <td>
+          <a href="/muggle_multiply">Multiply</a>
+        </td>
+
+        <td>
+          <a href="/muggle_divide">Divide</a>
+        </td>
+
+        <td>
+          <a href="/muggle_translate">Translate</a>
+        </td>
+      </tr>
+    </table>
+
     <%= yield %>
   </body>
 </html>
